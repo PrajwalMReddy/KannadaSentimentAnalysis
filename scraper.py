@@ -12,8 +12,10 @@ def next_account():
 
 def store_tweets(tweets_dict_list):
     for tweet_dict in tweets_dict_list:
-        with open(f"tweets/{tweet_dict['Username']}-{tweet_dict['ID']}.json", "w+") as file:
-            file.write(json.dumps(tweet_dict))
+        pathlib.Path(f"tweets/{tweet_dict['Username']}").mkdir(parents=True, exist_ok=True)
+
+        with open(f"tweets/{tweet_dict['Username']}/{tweet_dict['ID']}.json", "w+", encoding='utf8') as file:
+            json.dump(tweet_dict, file, ensure_ascii=False)
 
 
 def process_tweets(tweets_df):
@@ -48,11 +50,15 @@ def scrape_users_tweets():
             user.Username = next(all_accounts)
             user.Pandas = True
 
-            twint.run.Search(user)
-            tweets = twint.storage.panda.Tweets_df
+            try:
+                twint.run.Search(user)
+                tweets = twint.storage.panda.Tweets_df
 
-            process_tweets(tweets)
-            print("\n")
+                process_tweets(tweets)
+                print("\n")
+
+            except Exception:
+                print(f"Error Retrieving Tweets From Account: {user.Username}")
 
         except StopIteration:
             break
