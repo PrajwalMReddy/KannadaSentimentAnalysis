@@ -5,9 +5,22 @@ import twint
 
 
 def next_account():
-    for account in open("accounts.txt", "r"):
-        print(f"ACCOUNT: {account}")
-        yield account.rstrip()
+    with open("settings.json", "r") as file:
+        settings = json.load(file)
+        accounts = settings["Accounts"]
+
+        for account in accounts:
+            print(f"ACCOUNT: {account}")
+            yield account.rstrip()
+
+
+def get_dates():
+    with open("settings.json", "r") as file:
+        settings = json.load(file)
+        since = settings["Since"]
+        until = settings["Until"]
+
+        return since, until
 
 
 def store_tweets(tweets_dict_list):
@@ -42,13 +55,17 @@ def process_tweets(tweets_df):
 
 def scrape_users_tweets():
     all_accounts = next_account()
+    since, until = get_dates()
 
     while True:
         try:
             user = twint.Config()
-            user.Limit = 1
             user.Username = next(all_accounts)
             user.Pandas = True
+
+            if since != "" and until != "":
+                user.Since = since
+                user.Until = until
 
             try:
                 twint.run.Search(user)
@@ -64,4 +81,9 @@ def scrape_users_tweets():
             break
 
 
-scrape_users_tweets()
+def main():
+    scrape_users_tweets()
+
+
+if __name__ == "__main__":
+    main()
