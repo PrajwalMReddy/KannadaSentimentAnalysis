@@ -17,6 +17,7 @@ def next_account():
 def get_dates():
     with open("settings.json", "r") as file:
         settings = json.load(file)
+
         since = settings["Since"]
         until = settings["Until"]
 
@@ -28,6 +29,7 @@ def store_tweets(tweets_dict_list):
         pathlib.Path(f"tweets/{tweet_dict['Username']}").mkdir(parents=True, exist_ok=True)
 
         with open(f"tweets/{tweet_dict['Username']}/{tweet_dict['ID']}.json", "w+", encoding='utf8') as file:
+            # 'ensure_ascii=False' is to correctly handle tweets in the Kannada script
             json.dump(tweet_dict, file, ensure_ascii=False)
 
 
@@ -35,6 +37,8 @@ def process_tweets(tweets_df):
     tweet_dict_list = []
 
     for index, row in tweets_df.iterrows():
+        # Stores The Exact Features Required For The Data Analysis
+
         tweet_dict = {
             "ID": tweets_df.iat[index, 0],
             "Username": tweets_df.iat[index, 12],
@@ -60,7 +64,9 @@ def scrape_users_tweets():
     while True:
         try:
             user = twint.Config()
+
             user.Username = next(all_accounts)
+            user.Limit = 10000
             user.Pandas = True
 
             if since != "" and until != "":
@@ -74,7 +80,7 @@ def scrape_users_tweets():
                 process_tweets(tweets)
                 print("\n")
 
-            except Exception:
+            except Exception:  # The Exact Exception Does Not Matter
                 print(f"Error Retrieving Tweets From Account: {user.Username}")
 
         except StopIteration:
