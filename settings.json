@@ -5,48 +5,56 @@
   "Candidates": [
     {
       "Account": "b_mattimadu",
+      "Name": "Basavaraj Mattimadu",
       "Constituency": "Gulbarga Rural",
       "MLA": true,
       "Party": "BJP"
     },
     {
       "Account": "VijayKumarGRam2",
+      "Name": "Vijay Kumar G Ramakrishna",
       "Constituency": "Gulbarga Rural",
       "MLA": false,
       "Party": "INC"
     },
     {
       "Account": "lalajibjp",
+      "Name": "Lalaji Mendon",
       "Constituency": "Kaup",
       "MLA": true,
       "Party": "BJP"
     },
     {
       "Account": "VKSorake",
+      "Name": "Vinay Kumar Sorake",
       "Constituency": "Kaup",
       "MLA": false,
       "Party": "INC"
     },
     {
       "Account": "mla_raghu",
+      "Name": "S RAGHU MLA",
       "Constituency": "C. V. Raman Nagar",
       "MLA": true,
       "Party": "BJP"
     },
     {
       "Account": "SampathRajR",
+      "Name": "R Sampath Raj",
       "Constituency": "C. V. Raman Nagar",
       "MLA": false,
       "Party": "INC"
     },
     {
       "Account": "GTDevegowda",
+      "Name": "GT Devegowda",
       "Constituency": "Chamundeshwari",
       "MLA": true,
       "Party": "JDS"
     },
     {
       "Account": "siddaramaiah",
+      "Name": "Siddaramaiah",
       "Constituency": "Chamundeshwari",
       "MLA": false,
       "Party": "INC"
