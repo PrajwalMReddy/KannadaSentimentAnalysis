@@ -2,7 +2,54 @@
   "Since": "2017-05-12",
   "Until": "2018-05-12",
 
-  "Accounts": [
-    "CMofKarnataka"
+  "Candidates": [
+    {
+      "Account": "b_mattimadu",
+      "Constituency": "Gulbarga Rural",
+      "MLA": true,
+      "Party": "BJP"
+    },
+    {
+      "Account": "VijayKumarGRam2",
+      "Constituency": "Gulbarga Rural",
+      "MLA": false,
+      "Party": "INC"
+    },
+    {
+      "Account": "lalajibjp",
+      "Constituency": "Kaup",
+      "MLA": true,
+      "Party": "BJP"
+    },
+    {
+      "Account": "VKSorake",
+      "Constituency": "Kaup",
+      "MLA": false,
+      "Party": "INC"
+    },
+    {
+      "Account": "mla_raghu",
+      "Constituency": "C. V. Raman Nagar",
+      "MLA": true,
+      "Party": "BJP"
+    },
+    {
+      "Account": "SampathRajR",
+      "Constituency": "C. V. Raman Nagar",
+      "MLA": false,
+      "Party": "INC"
+    },
+    {
+      "Account": "GTDevegowda",
+      "Constituency": "Chamundeshwari",
+      "MLA": true,
+      "Party": "JDS"
+    },
+    {
+      "Account": "siddaramaiah",
+      "Constituency": "Chamundeshwari",
+      "MLA": false,
+      "Party": "INC"
+    }
   ]
 }

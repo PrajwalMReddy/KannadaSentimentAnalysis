@@ -7,11 +7,11 @@ import twint
 def next_account():
     with open("settings.json", "r") as file:
         settings = json.load(file)
-        accounts = settings["Accounts"]
+        accounts = settings["Candidates"]
 
         for account in accounts:
-            print(f"ACCOUNT: {account}")
-            yield account.rstrip()
+            print(f"ACCOUNT: {account['Account']}")
+            yield account['Account'].rstrip()
 
 
 def get_dates():
@@ -26,10 +26,10 @@ def get_dates():
 
 def store_tweets(tweets_dict_list):
     for tweet_dict in tweets_dict_list:
-        pathlib.Path(f"tweets/{tweet_dict['Username']}").mkdir(parents=True, exist_ok=True)
+        pathlib.Path(f"tweets-test/{tweet_dict['Name']}").mkdir(parents=True, exist_ok=True)
 
-        with open(f"tweets/{tweet_dict['Username']}/{tweet_dict['ID']}.json", "w+", encoding='utf8') as file:
-            # 'ensure_ascii=False' is to correctly handle tweets in the Kannada script
+        with open(f"tweets-test/{tweet_dict['Name']}/{tweet_dict['ID']}.json", "w+", encoding='utf8') as file:
+            # 'ensure_ascii=False' is to correctly handle tweets-test in the Kannada script
             json.dump(tweet_dict, file, ensure_ascii=False)
 
 
@@ -81,7 +81,7 @@ def scrape_users_tweets():
                 print("\n")
 
             except Exception:  # The Exact Exception Does Not Matter
-                print(f"Error Retrieving Tweets From Account: {user.Username}")
+                print(f"Error Retrieving Tweets From Account: {user.Username}\n\n")
 
         except StopIteration:
             break
