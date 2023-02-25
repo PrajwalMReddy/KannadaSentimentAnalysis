@@ -88,7 +88,10 @@ def scrape_users_tweets():
 
 
 def main():
-    scrape_users_tweets()
+    import time
+    for i in range(100):
+        scrape_users_tweets()
+        time.sleep(5)
 
 
 if __name__ == "__main__":
