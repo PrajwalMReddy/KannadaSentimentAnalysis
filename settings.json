@@ -5,59 +5,171 @@
   "Candidates": [
     {
       "Account": "b_mattimadu",
-      "Name": "Basavaraj Mattimadu",
+      "Name": "Basawaraj Mattimud",
       "Constituency": "Gulbarga Rural",
-      "MLA": true,
       "Party": "BJP"
     },
     {
       "Account": "VijayKumarGRam2",
-      "Name": "Vijay Kumar G Ramakrishna",
+      "Name": "Vijaykumar G. Ramakrishna",
       "Constituency": "Gulbarga Rural",
-      "MLA": false,
       "Party": "INC"
     },
     {
       "Account": "lalajibjp",
       "Name": "Lalaji Mendon",
       "Constituency": "Kaup",
-      "MLA": true,
       "Party": "BJP"
     },
     {
       "Account": "VKSorake",
       "Name": "Vinay Kumar Sorake",
       "Constituency": "Kaup",
-      "MLA": false,
       "Party": "INC"
     },
     {
       "Account": "mla_raghu",
-      "Name": "S RAGHU MLA",
+      "Name": "S. Raghu",
       "Constituency": "C. V. Raman Nagar",
-      "MLA": true,
       "Party": "BJP"
     },
     {
       "Account": "SampathRajR",
-      "Name": "R Sampath Raj",
+      "Name": "R. Sampath Raj",
       "Constituency": "C. V. Raman Nagar",
-      "MLA": false,
       "Party": "INC"
     },
     {
       "Account": "GTDevegowda",
       "Name": "GT Devegowda",
       "Constituency": "Chamundeshwari",
-      "MLA": true,
       "Party": "JDS"
     },
     {
       "Account": "siddaramaiah",
       "Name": "Siddaramaiah",
       "Constituency": "Chamundeshwari",
-      "MLA": false,
       "Party": "INC"
+    },
+    {
+      "Account": "J_N_Ganesh",
+      "Name": "J.N. Ganesh",
+      "Constituency": "Kampli",
+      "Party": "INC"
+    },
+    {
+      "Account": "THsureshbabu01",
+      "Name": "T H Suresh Babu",
+      "Constituency": "Kampli",
+      "Party": "BJP"
+    },
+    {
+      "Account": "MLAMkrishnappa",
+      "Name": "M. Krishnappa",
+      "Constituency": "Bangalore South",
+      "Party": "BJP"
+    },
+    {
+      "Account": "RKRames76169218",
+      "Name": "R. K. Ramesh",
+      "Constituency": "Bangalore South",
+      "Party": "INC"
+    },
+    {
+      "Account": "hd_kumaraswamy",
+      "Name": "H.D. Kumaraswamy",
+      "Constituency": "Channapatna",
+      "Party": "JDS"
+    },
+    {
+      "Account": "CPYogeeshwara",
+      "Name": "C. P. Yogeeshwara",
+      "Constituency": "Channapatna",
+      "Party": "BJP"
+    },
+    {
+      "Account": "BJP_GHT",
+      "Name": "G. H. Thippareddy",
+      "Constituency": "Chitradurga",
+      "Party": "BJP"
+    },
+    {
+      "Account": "Puppy_JDS_CTA",
+      "Name": "K. C. Veerendra",
+      "Constituency": "Chitradurga",
+      "Party": "JDS"
+    },
+    {
+      "Account": "kumathalliM",
+      "Name": "Mahesh Kumathalli",
+      "Constituency": "Athani",
+      "Party": "INC"
+    },
+    {
+      "Account": "LaxmanSavadi",
+      "Name": "Laxman Savadi",
+      "Constituency": "Athani",
+      "Party": "BJP"
+    },
+    {
+      "Account": "NimmaNagendra",
+      "Name": "L. Nagendra",
+      "Constituency": "Chamaraja",
+      "Party": "BJP"
+    },
+    {
+      "Account": "MlaVasu",
+      "Name": "Vasu",
+      "Constituency": "Chamaraja",
+      "Party": "INC"
+    },
+    {
+      "Account": "drashwathcn",
+      "Name": "Dr. C.N. Ashwath Narayan",
+      "Constituency": "Malleshwaram",
+      "Party": "BJP"
+    },
+    {
+      "Account": "KengalShreepada",
+      "Name": "Kengal Shreepadha Renu",
+      "Constituency": "Malleshwaram",
+      "Party": "INC"
+    },
+    {
+      "Account": "dineshgrao",
+      "Name": "Dinesh Gundu Rao",
+      "Constituency": "Gandhi Nagar",
+      "Party": "INC"
+    },
+    {
+      "Account": "sapthagirigowda",
+      "Name": "A. R. Sapthagiri Gowda",
+      "Constituency": "Gandhi Nagar",
+      "Party": "BJP"
+    },
+    {
+      "Account": "RLR_BTM",
+      "Name": "Ramalinga Reddy",
+      "Constituency": "B.T.M. Layout",
+      "Party": "INC"
+    },
+    {
+      "Account": "LalleshReddyGlr",
+      "Name": "Lallesh Reddy",
+      "Constituency": "B.T.M. Layout",
+      "Party": "BJP"
+    },
+    {
+      "Account": "Sowmyareddyr",
+      "Name": "Soumya Reddy",
+      "Constituency": "Jayanagar",
+      "Party": "INC"
+    },
+    {
+      "Account": "BjpPrahlad",
+      "Name": "B. N. Prahlad",
+      "Constituency": "Jayanagar",
+      "Party": "BJP"
     }
   ]
 }

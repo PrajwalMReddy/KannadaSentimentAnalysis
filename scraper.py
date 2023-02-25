@@ -5,17 +5,17 @@ import twint
 
 
 def next_account():
-    with open("settings.json", "r") as file:
+    with open("settings.json", "r", encoding="utf-8") as file:
         settings = json.load(file)
         accounts = settings["Candidates"]
 
         for account in accounts:
-            print(f"ACCOUNT: {account['Account']}")
-            yield account['Account'].rstrip()
+            print(f"POLITICIAN: {account['Name']}")
+            yield account['Account'].rstrip(), account['Name'].rstrip()
 
 
 def get_dates():
-    with open("settings.json", "r") as file:
+    with open("settings.json", "r", encoding="utf-8") as file:
         settings = json.load(file)
 
         since = settings["Since"]
@@ -33,7 +33,7 @@ def store_tweets(tweets_dict_list):
             json.dump(tweet_dict, file, ensure_ascii=False)
 
 
-def process_tweets(tweets_df):
+def process_tweets(tweets_df, politician_name):
     tweet_dict_list = []
 
     for index, row in tweets_df.iterrows():
@@ -42,7 +42,7 @@ def process_tweets(tweets_df):
         tweet_dict = {
             "ID": tweets_df.iat[index, 0],
             "Username": tweets_df.iat[index, 12],
-            "Name": tweets_df.iat[index, 13],
+            "Name": politician_name,
             "Date": tweets_df.iat[index, 3],
             "Tweet": tweets_df.iat[index, 6],
             "Language": tweets_df.iat[index, 7],
@@ -65,7 +65,7 @@ def scrape_users_tweets():
         try:
             user = twint.Config()
 
-            user.Username = next(all_accounts)
+            user.Username, politician_name = next(all_accounts)
             user.Limit = 10000
             user.Pandas = True
 
@@ -77,7 +77,7 @@ def scrape_users_tweets():
                 twint.run.Search(user)
                 tweets = twint.storage.panda.Tweets_df
 
-                process_tweets(tweets)
+                process_tweets(tweets, politician_name)
                 print("\n")
 
             except Exception:  # The Exact Exception Does Not Matter
