@@ -1,6 +1,11 @@
 import os
 import json
 
+import re
+import string
+
+from nltk import WordNetLemmatizer, tokenize
+from nltk.corpus import stopwords
 from nltk.sentiment import SentimentIntensityAnalyzer
 from translate import Translator
 
@@ -64,10 +69,27 @@ def get_politicians_tweets(politician):
     return tweets
 
 
+def sanitize_text(text):
+    text = text.lower()
+    text = re.sub(r'\n', '', text)
+
+    translator = str.maketrans('', '', string.punctuation)
+    text = text.translate(translator)
+
+    lemmatizer = WordNetLemmatizer()
+    words = tokenize.word_tokenize(text)
+    words = [lemmatizer.lemmatize(word) for word in words]
+
+    stop_words = stopwords.words("english")
+    filtered_text = [word for word in words if not word in stop_words]
+
+    return " ".join(filtered_text)
+
+
 def sentiment_polarity(text):
     sia = SentimentIntensityAnalyzer()
 
-    score = sia.polarity_scores(text)
+    score = sia.polarity_scores(sanitize_text(text))
     key = list(score.keys())[list(score.values()).index(max(list(score.values())[:len(score) - 1]))]
 
     return score, key
@@ -77,6 +99,8 @@ def translate_text(json_tweet):
     if json_tweet["Language"] != "kn":
         return json_tweet["Tweet"]
 
+    # TODO Add: from_lang='kn',
+    # This Slows Down The Analysis Though
     translator = Translator(to_lang="en")
     translation = translator.translate(json_tweet["Tweet"])
 
