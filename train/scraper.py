@@ -26,10 +26,10 @@ def get_dates():
 
 def store_tweets(tweets_dict_list):
     for tweet_dict in tweets_dict_list:
-        pathlib.Path(f"tweets-test/{tweet_dict['Name']}").mkdir(parents=True, exist_ok=True)
+        pathlib.Path(f"train/tweets-train/{tweet_dict['Name']}").mkdir(parents=True, exist_ok=True)
 
-        with open(f"tweets-test/{tweet_dict['Name']}/{tweet_dict['ID']}.json", "w+", encoding='utf8') as file:
-            # 'ensure_ascii=False' is to correctly handle tweets-test in the Kannada script
+        with open(f"train/tweets-train/{tweet_dict['Name']}/{tweet_dict['ID']}.json", "w+", encoding='utf8') as file:
+            # 'ensure_ascii=False' is to correctly handle tweets-train in the Kannada script
             json.dump(tweet_dict, file, ensure_ascii=False)
 
 

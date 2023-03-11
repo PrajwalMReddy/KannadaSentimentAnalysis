@@ -266,6 +266,102 @@
       "Name": "K. R. Mallikarjunappa",
       "Constituency": "Chamarajanagar",
       "Party": "BJP"
+    },
+    {
+      "Account": "DKShivakumar",
+      "Name": "D. K. Shivakumar",
+      "Constituency": "Kanakapura",
+      "Party": "INC"
+    },
+    {
+      "Account": "narayanagowdakc",
+      "Name": "Narayana Gowda",
+      "Constituency": "Kanakapura",
+      "Party": "JDS"
+    },
+    {
+      "Account": "HukkeriGanesh",
+      "Name": "Ganesh Hukkeri",
+      "Constituency": "Chikkodi-Sadalga",
+      "Party": "INC"
+    },
+    {
+      "Account": "annasahebsjolle",
+      "Name": "Annasaheb Jolle",
+      "Constituency": "Chikkodi-Sadalga",
+      "Party": "BJP"
+    },
+    {
+      "Account": "shrimantpatil_",
+      "Name": "Srimant Patil",
+      "Constituency": "Kagwad",
+      "Party": "INC"
+    },
+    {
+      "Account": "rajukage",
+      "Name": "Raju Kage",
+      "Constituency": "Kagwad",
+      "Party": "BJP"
+    },
+    {
+      "Account": "BasanagoudaBJP",
+      "Name": "Basangouda Patil Yatnal",
+      "Constituency": "Bijapur City",
+      "Party": "BJP"
+    },
+    {
+      "Account": "HamidMushrif",
+      "Name": "Abdul Hameed Mushrif",
+      "Constituency": "Bijapur City",
+      "Party": "INC"
+    },
+    {
+      "Account": "kashempur",
+      "Name": "Bandeppa Kashempur",
+      "Constituency": "Bidar South",
+      "Party": "JDS"
+    },
+    {
+      "Account": "SBeldale",
+      "Name": "Dr. Shailendra Beldale",
+      "Constituency": "Bidar South",
+      "Party": "BJP"
+    },
+    {
+      "Account": "RRoshanBaigOff1",
+      "Name": "R. Roshan Baig",
+      "Constituency": "Shivajinagar",
+      "Party": "INC"
+    },
+    {
+      "Account": "KSNBJP",
+      "Name": "Katta Subramanya Naidu",
+      "Constituency": "Shivajinagar",
+      "Party": "BJP"
+    },
+    {
+      "Account": "VSOMANNA_BJP",
+      "Name": "V. Somanna",
+      "Constituency": "Govindraj Nagar",
+      "Party": "BJP"
+    },
+    {
+      "Account": "Priyakrishna_K",
+      "Name": "Priya Krishna",
+      "Constituency": "Govindraj Nagar",
+      "Party": "INC"
+    },
+    {
+      "Account": "lingeshksmla",
+      "Name": "K. S. Lingesha",
+      "Constituency": "Belur",
+      "Party": "JDS"
+    },
+    {
+      "Account": "hksureshbjp",
+      "Name": "H. K. Suresh",
+      "Constituency": "Belur",
+      "Party": "BJP"
     }
   ]
 }
