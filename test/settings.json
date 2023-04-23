@@ -14,6 +14,54 @@
       "Name": "UB Venkatesh",
       "Constituency": "Basavanagudi",
       "Party": "INC"
+    },
+    {
+      "Account": "CPYogeeshwara",
+      "Name": "C.P. Yogeeshwara",
+      "Constituency": "Channapatna",
+      "Party": "BJP"
+    },
+    {
+      "Account": "hd_kumaraswamy",
+      "Name": "H. D. Kumaraswamy",
+      "Constituency": "Channapatna",
+      "Party": "JDS"
+    },
+    {
+      "Account": "DKShivakumar",
+      "Name": "D. K. Shivakumar",
+      "Constituency": "Kanakapura",
+      "Party": "INC"
+    },
+    {
+      "Account": "RAshokaBJP",
+      "Name": "R. Ashoka",
+      "Constituency": "Kanakapura",
+      "Party": "BJP"
+    },
+    {
+      "Account": "siddaramaiah",
+      "Name": "Siddaramaiah",
+      "Constituency": "Varuna",
+      "Party": "INC"
+    },
+    {
+      "Account": "VSOMANNA_BJP",
+      "Name": "V. Somanna",
+      "Constituency": "Varuna",
+      "Party": "BJP"
+    },
+    {
+      "Account": "HRavindrabjp",
+      "Name": "H. Ravindra",
+      "Constituency": "Vijay Nagar",
+      "Party": "BJP"
+    },
+    {
+      "Account": "MKrishnappa_",
+      "Name": "M. Krishnappa",
+      "Constituency": "Vijay Nagar",
+      "Party": "INC"
     }
   ]
 }
